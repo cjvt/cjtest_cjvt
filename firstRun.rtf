@@ -1,0 +1,56 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 jaychen:~ jaychen$ cd /Users/jaychen/Documents/myJob/vt\\ projects/btd\\ importer/code\
+jaychen:code jaychen$ ls\
+btd_importer.php	lc_lookup.php\
+btd_scanner.sh		lib_addison.php\
+jaychen:code jaychen$ btd_importer.php -q test -d ../testPDFs/\
+bash: btd_importer.php: command not found\
+jaychen:code jaychen$ ./btd_importer.php -q test -d ../testPDFs/\
+bash: ./btd_importer.php: Permission denied\
+jaychen:code jaychen$ chmod 777 *\
+jaychen:code jaychen$ ls -l\
+total 72\
+-rwxrwxrwx@ 1 jaychen  staff  20311 Apr 23 09:02 btd_importer.php\
+-rwxrwxrwx@ 1 jaychen  staff   1102 Apr 23 09:02 btd_scanner.sh\
+drwxrwxrwx  3 jaychen  staff    102 Apr 24 11:57 importer\
+-rwxrwxrwx@ 1 jaychen  staff    716 Apr 23 09:02 lc_lookup.php\
+-rwxrwxrwx@ 1 jaychen  staff   4521 Apr 23 09:02 lib_addison.php\
+jaychen:code jaychen$ ./btd_importer.php -q test -d ../testPDFs/\
+\
+Importing LD5655.V856_1994.L597.pdf\
+Making sure file isn't still being written to\
+  Getting Addison record\
+    Bib:        b1851024\
+    Update:     12-13-2012\
+    Middle:\
+    Last:       Liu\
+    First:      Zheng-Xian\
+    Title:      Antioxidant activity of Mn-salophen complex and its effects on antioxidant enzymes in Escherichia coli\
+    Volumes:    1\
+    Department: Biochemistry and Anaerobic Microbiology\
+    Degree:     Ph. D.\
+    Year:       1994\
+    Dtype:      dissertation\
+    Ddate:      1994-00-00\
+    Keywords:   Superoxide dismutase.\
+    Pid:        auto\
+    Availability: restricted\
+    Availability_description: Release the entire work for Virginia Tech access only.\
+    Bound:      YES\
+    Sdate:      2014-04-24\
+    Rdate:      2014-04-24\
+    Adate:      2014-04-24\
+    PublishEml: NO\
+  URN will be\
+  URL will be http://scholar.lib.vt.edu/theses/available//\
+  Skipping upload because this is a test run\
+  Writing .import_log file\
+  Import succeeded.\
+Sending notification emails\
+\
+jaychen:code jaychen$}
